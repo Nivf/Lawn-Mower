@@ -17,7 +17,6 @@ import { INSTRUCTIONS, DIRECTIONS } from "./types";
 /*Process mowers*/
 let i = 1;
 while (i < inputData.length) {
-  // const inputAsObject = inputData.map() // Create object for each mower {postion: array[i], commands: array[i+1]}.
   try{
     const positionsArray = inputData[i].trim().split(' ') as Array<DIRECTIONS>; //trim for remove trailing space
     const x = parseInt(positionsArray[0]), y = parseInt(positionsArray[1]);
